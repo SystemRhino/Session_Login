@@ -10,6 +10,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 
 ```markdown
 ~~~php
+```
 if (isset($_POST['#login']) && isset($_POST['senha'])) {
 session_start();
 $_SESSION['login'] = $_POST['login'];
@@ -18,6 +19,7 @@ header("location:menu.php");
 }else{
     header("location:index.html");
 }
+```
 ~~~
 
 
