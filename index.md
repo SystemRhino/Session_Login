@@ -9,7 +9,7 @@ Em todas as página tem um bloco de código onde verifica se o existe uma sessã
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-~~~php
+~~~
 ```
 if (isset($_POST['#login']) && isset($_POST['senha'])) {
 session_start();
