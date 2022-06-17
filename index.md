@@ -6,7 +6,6 @@ Em todas as página tem um bloco de código onde verifica se o existe uma sessã
 
 ### Pagina de redirecionamento
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
 ~~~php
@@ -19,22 +18,21 @@ header("location:menu.php");
     header("location:index.html");
 }
 ~~~
+```
+### Pagina de redirecionamento
+```markdown
+~~~php
+session_start();
+if (!isset($_SESSION['login']) || !isset($_SESSION['senha']))
+{
+	header("location:index.html");
 
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+}elseif ($_SESSION['login'] != "admin" && $_SESSION['senha'] != "admin") {
+// Pagina do usuario
+}else{
+// Pagina do admin
+}
+~~~
 ```
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
