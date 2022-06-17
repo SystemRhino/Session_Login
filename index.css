@@ -1,0 +1,74 @@
+*{
+  margin: 3px;
+}
+body{
+  background-color: gainsboro;
+  height: 100%;
+}
+html{
+  height: 100%;
+}
+nav, footer{
+  height: 8%;
+}
+#div1{
+  background-color: white;
+  width: 50%;
+  box-shadow: 10px 10px slateblue;
+}
+#perfil{
+    border-radius: 100%;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  darkslateblue;
+}
+#login,#pass, #file{
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color:  darkslateblue;
+}
+::-webkit-input-placeholder  { color:#8a8a8a; }
+input:-moz-placeholder { color:#8a8a8a;
+
+
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  min-width: 12px;
+  min-height: 12px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: white;
+  background: #4FD1C5;
+background: linear-gradient(90deg, rgba(72,61,139) 0%, rgba(105,89,205) 100%);
+  border: none;
+  border-radius: 1000px;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+.button:hover, .button:focus {
+  color: white;
+  transform: translateY(-6px);
+}
+
+button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
