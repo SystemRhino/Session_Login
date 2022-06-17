@@ -1,14 +1,25 @@
-## Welcome to GitHub Pages
+## Sistema de armazenamento de Login com $_SESSSION
 
-You can use the [editor on GitHub](https://github.com/SystemRhino/Session_Login/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+O sistema contém uma pagina com verificação de login, assim se o login for compatível com o do admin ele exibirá a área restrita, do contrário exibirá uma pagina padrão de usuário.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Em todas as página tem um bloco de código onde verifica se o existe uma sessão no momento, ou seja, se o usuário está logado.
 
-### Markdown
+### Pagina de redirecionamento
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
+#if ('isset'($_POST['#login']) && 'isset'($_POST['#senha'])) {
+session_start();
+$_SESSION['login'] = $_POST['login'];
+$_SESSION['senha'] = $_POST['senha'];
+header("location:menu.php");
+}else{
+    header("location:index.html");
+}
+
+
+
 Syntax highlighted code block
 
 # Header 1
