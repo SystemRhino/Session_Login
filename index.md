@@ -19,7 +19,7 @@ header("location:menu.php");
 }
 ~~~
 ```
-### Pagina de redirecionamento
+### Script de verificação de Admin
 ```markdown
 ~~~php
 session_start();
@@ -35,12 +35,8 @@ if (!isset($_SESSION['login']) || !isset($_SESSION['senha']))
 ~~~
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+Para mais informações sobre $_SESSION [$_SESSION syntax]([https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax](https://www.php.net/manual/pt_BR/reserved.variables.session.php)).
 
-### Jekyll Themes
+## Observação
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SystemRhino/Session_Login/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Quando executado em uma guia normal o cookie é salvado no navegador, assim quando se acessa as páginas restritas não pede login até que finalize a sessão ou exclua o cookie "PHPSESSID".
