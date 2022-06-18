@@ -2,7 +2,7 @@
 
 O sistema contém uma pagina com verificação de login, assim se o login for compatível com o do admin ele exibirá a área restrita, do contrário exibirá uma pagina padrão de usuário.
 
-Em todas as página tem um bloco de código onde verifica se o existe uma sessão no momento, ou seja, se o usuário está logado.
+Em todas as página tem um bloco de código onde verifica se existe uma sessão no momento, ou seja, se o usuário está logado.
 
 ### Pagina de redirecionamento
 
